@@ -54,6 +54,6 @@ export default {
     },
 
     async takeScreenshot (id, screenshotPath) {
-        await this.openedPages[id].screenshot({ path: screenshotPath });
+        await this.openedPages[id].screenshot({ path: screenshotPath, fullPage:true });
     }
 };
